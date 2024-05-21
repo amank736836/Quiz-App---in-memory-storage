@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="code.css">
+</head>
+
+<body>
+    <div class="main-box">
+        <h1 class="quiz-heading">Quiz App</h1>
+        <div class="quiz-box">
+            <div id="quiz-container">
+                <h2 id="question-title"></h2>
+                <form id="options-form">
+                    <input type="radio" name="option" value="0" id="option0">
+                    <label for="option0" id="option0-label"></label><br>
+                    <input type="radio" name="option" value="1" id="option1">
+                    <label for="option1" id="option1-label"></label><br>
+                    <input type="radio" name="option" value="2" id="option2">
+                    <label for="option2" id="option2-label"></label><br>
+                    <input type="radio" name="option" value="3" id="option3">
+                    <label for="option3" id="option3-label"></label><br>
+                </form>
+                <button id="submit-btn">Submit</button>
+                <button id="next-btn" style="display:none">Next Question</button>
+            </div>
+            <div id="result-container" style="display:none">
+                <h2>Your Score: <span id="score">0</span></h2>
+                <div id="correct-answers"></div>
+                <button id="restart-btn">Restart Quiz</button>
+            </div>
+            <div id="answer-key" style="display:none">
+                <h2>Answer Key</h2>
+                <div id="answer-key-container"></div>
+            </div>
+        </div>
+    </div>
+    <script src="code1.js"></script>
+</body>
+
+</html>
